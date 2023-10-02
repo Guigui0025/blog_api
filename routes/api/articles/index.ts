@@ -3,7 +3,7 @@
 import { useStorage } from '#imports';
 
 export default defineEventHandler(async () => {
-  const articles: articles = await useStorage('assets:server').getItem(
+  const articles  = await useStorage('assets:server').getItem(
     `db/articles.json`
   );
 
